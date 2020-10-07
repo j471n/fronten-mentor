@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html {
+    background-color: #674BB1;
+    color: white;
+    background-image: url(images/bg-desktop.svg);
+}
+
+body {
+    margin: 0 40px;
+}
+
+.container {
+    display: flex;
+    /* margin: 0 auto; */
+    margin: auto 50px;
+    -webkit-margin-collapse: collapse;
+}
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 50px;
+    width: 40%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 150px;
+    padding: 18px 20px;
+    text-align: center;
+    background-color: white;
+    color: #674BB1;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px 4px #4F3A88;
+}
+
+.logo {
+    margin: 50px;
+    -webkit-margin-collapse: collapse;
+    width: 12%;
+}
+
+.icons {
+    text-align: right;
+    margin: -35px 85px;
+    padding: -10px;
+}
+
+.icons img {
+    /* background-color: white; */
+    border: 2px solid white;
+    width: 1.1%;
+    border-radius: 100px;
+    padding: 8px;
+    margin: 1px;
+    /* position: absolute;
+    right: 10%; */
+}
+
+.icons img.insta {
+    width: 1.5%;
+    padding: 5px;
+}
+
+@media screen and (max-width:375px) {
+    html {
+        background-image: url(images/bg-mobile.svg);
+        margin: 0;
+    }
+    body {
+        margin: 0;
+    }
+    .logo {
+        margin: 10% 5%;
+        width: 45%;
+        text-align: left;
+    }
+    .container {
+        display: block;
+    }
+    .preview img {
+        width: 120%;
+        margin: 10% -10%;
+    }
+    .body {
+        margin: 15% auto;
+        width: 100%;
+    }
+    h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        /* margin: 0/; */
+        font-size: 14px;
+        line-height: 2.7ch;
+    }
+    .btn {
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+    }
+    .icons {
+        text-align: center;
+        margin: 15% 0;
+        ;
+    }
+    .icons img {
+        width: 5%;
+    }
+    .icons img.insta {
+        width: 6.6%;
+    }
+}
