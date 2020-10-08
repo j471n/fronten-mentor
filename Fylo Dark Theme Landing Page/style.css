@@ -1,0 +1,1135 @@
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+}
+
+
+/* header */
+
+header {
+    width: calc(100% - 10rem);
+    padding: 4.5rem 5rem 0rem 5rem;
+}
+
+.header_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 17.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+.header_main {
+    margin-top: 4.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_img {
+    width: 56%;
+}
+
+.header_main_header {
+    margin-top: 1rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2;
+}
+
+.header_main_header h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font: 700;
+}
+
+.header_main_header p {
+    width: 80%;
+    font-size: 1.25rem;
+    margin-top: .7rem;
+    line-height: 1.9rem;
+    color: white;
+}
+
+.header_main_header button {
+    margin-top: .7rem;
+    width: 17.5rem;
+    height: 3.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* main */
+
+main {
+    width: 100%;
+    margin: 13% 0 0 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.curvy_bg {
+    position: absolute;
+    top: -30vw;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+/* product list */
+
+.product_list {
+    position: relative;
+    top: -1.8rem;
+    width: 67%;
+    padding-top: 0rem;
+    margin: 0;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 23% 8%;
+    font-size: 1rem;
+    grid-template-areas: "a s" "c f";
+}
+
+.product_list .product_item:nth-child(1) {
+    grid-area: a;
+}
+
+.product_list .product_item:nth-child(2) {
+    grid-area: s;
+}
+
+.product_list .product_item:nth-child(3) {
+    grid-area: c;
+}
+
+.product_list .product_item:nth-child(4) {
+    grid-area: f;
+}
+
+.product_item {
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_item h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.product_item p {
+    line-height: 1.4rem;
+    margin: 0;
+}
+
+
+/* fylo main */
+
+.fylo_works {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12.5rem;
+}
+
+.fylo_works img {
+    margin-left: 7.5%;
+    margin-right: 4%;
+}
+
+.fylo_img {
+    width: 42%;
+}
+
+.fylo_main {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fylo_main h1 {
+    margin-top: 2.5rem;
+    width: 60%;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font: 700;
+    margin-bottom: .5rem;
+}
+
+.fylo_main p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.fylo_main p:nth-child(2) {
+    margin-top: .7rem;
+}
+
+back .fylo_main p:nth-child(3) {
+    width: 90%;
+    margin-bottom: .3rem;
+}
+
+.fylo_blue {
+    width: 10.7rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+.fylo_blue:hover {
+    opacity: 0.6;
+}
+
+.fylo_blue p {
+    width: auto;
+    margin: 0;
+    color: hsl(176, 68%, 64%);
+}
+
+.fylo_blue img {
+    margin: 0;
+    margin-left: .4rem;
+}
+
+
+/* comments_box */
+
+.comments_box {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 11rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    position: absolute;
+    top: -1rem;
+    left: 8.3rem;
+    width: 3.3rem;
+}
+
+.comments {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.comment {
+    position: relative;
+    top: 1rem;
+    left: 0;
+    width: 31%;
+    background-color: hsl(217, 28%, 15%);
+    box-sizing: border-box;
+    padding: 1rem 1rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 15px -5px hsl(217, 28%, 15%);
+    border-radius: 5px;
+}
+
+.comment p {
+    color: white;
+    font-size: .95rem;
+}
+
+.comment_person {
+    margin-top: .5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment_person img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100px;
+}
+
+.person_info {
+    margin-left: 0.5rem;
+}
+
+.person_info h4 {
+    margin: 0;
+    padding: 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.person_info p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+}
+
+
+/* access */
+
+.access {
+    margin-top: 13rem;
+    height: 17rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 2px 1px 25px -10px black;
+    z-index: 2;
+}
+
+.access h1 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font: 700;
+}
+
+.access p {
+    text-align: center;
+    width: 75%;
+    color: white;
+}
+
+.access_form {
+    width: 82%;
+    margin-top: 1.8rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.access_form input {
+    width: 59%;
+    border-radius: 100px;
+    padding: 0rem 2rem;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.access_form button {
+    width: 28%;
+    border-radius: 100px;
+    padding: 0rem 2rem;
+    height: 100%;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: -9.5%;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.footer_main {
+    padding: 12.5rem 0rem 4.4rem 0rem;
+    width: calc(100% - 9%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer_logo {
+    position: relative;
+    left: 8.5%;
+}
+
+.footer_info {
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.location {
+    position: relative;
+    margin-left: 9%;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+}
+
+.location p {
+    margin: 0;
+    padding: 0;
+    margin-left: 1.8rem;
+    margin-top: -.3rem;
+    font-size: 1rem;
+}
+
+.contact {
+    width: 15%;
+    position: relative;
+    left: 7.5%;
+    top: 0rem;
+}
+
+.phone,
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: white;
+}
+
+.email {
+    margin-top: 1rem;
+}
+
+.phone p,
+.email p {
+    margin: 0;
+    margin-left: 10%;
+}
+
+.links {
+    width: 18%;
+    position: relative;
+    left: 16%;
+    top: -.5rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link p {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.link p:nth-child(1) {
+    margin-top: 0;
+}
+
+.link p:nth-child(2) {
+    margin-top: 0;
+}
+
+.media {
+    position: relative;
+    left: 24.5%;
+    top: -1rem;
+    width: 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb,
+.tt,
+.ig {
+    display: flex;
+    align-items: center;
+    padding: .4rem;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.fb img,
+.tt img,
+.ig img {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .access_form button {
+        width: 32%;
+        font-size: .8rem;
+    }
+    .access_form input {
+        width: 50%;
+    }
+    .fylo_main h1 {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+    .fylo_main p {
+        margin: 0;
+    }
+    .fylo_img {
+        width: 50%;
+    }
+    .fylo_main {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .fylo_main h1 {
+        width: 80%;
+        font-size: 2rem;
+    }
+    .media {
+        width: 12%;
+        left: 18%;
+    }
+    .links {
+        width: 20%;
+        position: relative;
+        left: 13%;
+        top: -.5rem;
+    }
+    .header_main_header h1 {
+        font-size: 2rem;
+    }
+    .header_main_header p {
+        font-size: 1rem;
+    }
+    .quote {
+        position: absolute;
+        top: -1rem;
+        left: 8%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        width: 20%;
+        position: relative;
+        left: 3.5%;
+        top: 0rem;
+    }
+    .links {
+        position: relative;
+        left: 10%;
+        top: -.5rem;
+    }
+    .media {
+        position: relative;
+        left: 14.5%;
+        top: -1rem;
+    }
+    .access {
+        width: 70%;
+    }
+    .access h1 {
+        font-size: 1.8rem;
+    }
+    .access_form {
+        width: 90%;
+    }
+    .access_form input {
+        width: 50%;
+    }
+    .access_form button {
+        width: 30%;
+    }
+    .comments {
+        width: 90%;
+    }
+    .comment {
+        width: 29%;
+    }
+    .comment p {
+        font-size: .9rem;
+    }
+    .comment_person {
+        margin-top: .3rem;
+    }
+    .person_info h4 {
+        font-size: .8rem;
+    }
+    .person_info p {
+        font-size: 0.7rem;
+    }
+    .fylo_works img {
+        margin-left: 4%;
+    }
+    .fylo_img {
+        width: 50%;
+    }
+    .fylo_main {
+        width: 50%;
+    }
+    .fylo_main h1 {
+        width: 95%;
+    }
+    .fylo_main p {
+        width: 95%;
+    }
+    .fylo_main p:nth-child(3) {
+        width: 95%;
+    }
+    .product_list {
+        width: 80%;
+    }
+    .product_list .product_item:nth-child(2) {
+        margin-top: -.6rem;
+    }
+    .header_logo {
+        width: 10rem;
+    }
+    .header_img {
+        width: 55%;
+    }
+    .header_main_header {
+        width: 80%;
+    }
+    .header_main_header h1 {
+        font-size: 2rem;
+    }
+    .header_main_header p {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .header_main_header button {
+        height: 3.3rem;
+        cursor: pointer;
+        outline: none;
+    }
+    .quote {
+        position: absolute;
+        top: -1rem;
+        left: 2%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .links {
+        width: 23%;
+    }
+    .media {
+        top: -1.8rem;
+        width: 16%;
+        flex-direction: column;
+    }
+    .fb,
+    .tt,
+    .ig {
+        margin-top: .8rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    header {
+        width: calc(100% - 4rem);
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    nav {
+        font-size: .8rem;
+    }
+    .header_logo {
+        width: 8rem;
+    }
+    .header_main {
+        margin-top: 4.5rem;
+    }
+    .header_img {
+        width: 50%;
+    }
+    .header_main_header {
+        width: 100%;
+    }
+    .header_main_header h1 {
+        font-size: 2.3rem;
+    }
+    .header_main_header p {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .header_main_header button {
+        width: 20rem;
+        height: 2.8rem;
+        font-size: 1rem;
+        cursor: pointer;
+        outline: none;
+    }
+    .product_list {
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 13%;
+        margin-bottom: 15rem;
+        grid-template-areas: "a" "s" "c" "f";
+    }
+    .product_item h2 {
+        margin: 2rem 0;
+    }
+    .fylo_works {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fylo_works img {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .fylo_img {
+        width: 55%;
+    }
+    .fylo_main {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fylo_main h1 {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .fylo_main p {
+        width: 80%;
+        text-align: center;
+    }
+    .fylo_main p:nth-child(2) {
+        margin-top: 1rem;
+    }
+    .fylo_main p:nth-child(3) {
+        width: 80%;
+        margin-top: .3rem;
+    }
+    .fylo_blue {
+        width: 9.7rem;
+    }
+    .fylo_blue p {
+        width: auto;
+    }
+    .fylo_blue img {
+        margin: 0;
+        margin-left: .4rem;
+    }
+    .quote {
+        position: absolute;
+        top: -1rem;
+        left: 23%;
+    }
+    .comments {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .comment {
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+    .access {
+        margin-top: 5rem;
+        width: 85%;
+    }
+    .access_form {
+        width: 85%;
+    }
+    .access_form input {
+        width: 45%;
+    }
+    .access_form button {
+        width: 40%;
+    }
+    .footer_main {
+        width: 100%;
+    }
+    .footer_info {
+        flex-direction: column;
+    }
+    .location {
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+    .contact {
+        width: 50%;
+        position: relative;
+        left: 4rem;
+        top: 0rem;
+        margin-bottom: 3rem;
+    }
+    .phone p,
+    .email p {
+        margin-left: 3%;
+    }
+    .links {
+        width: 50%;
+        position: relative;
+        left: 4rem;
+        top: 0rem;
+        flex-direction: column;
+    }
+    .link {
+        margin-bottom: 2rem;
+    }
+    .media {
+        position: relative;
+        left: 0%;
+        top: 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .fb,
+    .tt,
+    .ig {
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header_img {
+        width: 70%;
+    }
+    .header_main_header h1 {
+        font-size: 1.8rem;
+    }
+    .header_main_header p {
+        font-size: .9rem;
+    }
+    .product_list {
+        margin-top: 5rem;
+    }
+    .product_item h2 {
+        font-size: 1.3rem;
+    }
+    .product_item p {
+        font-size: .9rem;
+    }
+    .fylo_main h1 {
+        font-size: 1.8rem;
+    }
+    .fylo_main p {
+        font-size: .9rem;
+    }
+    .fylo_img {
+        width: 65%;
+    }
+    .quote {
+        position: absolute;
+        top: -1rem;
+        left: 16%;
+    }
+    .comment {
+        width: 60%;
+        margin-bottom: 4rem;
+    }
+    .access {
+        margin-top: 7rem;
+        width: 90%;
+        height: 20rem;
+    }
+    .access_form {
+        width: 90%;
+        margin-top: 1rem;
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .access_form input {
+        width: 80%;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .access_form button {
+        width: 95%;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        margin-top: -20%;
+        position: relative;
+        top: 0%;
+        width: 100%;
+        background-color: hsl(216, 53%, 9%);
+    }
+    .header_img {
+        width: 80%;
+    }
+    nav {
+        width: 13rem;
+    }
+    .header_main_header h1 {
+        font-size: 2rem;
+    }
+    .header_main_header p {
+        font-size: 1rem;
+    }
+    .product_list {
+        width: 80%;
+    }
+    .product_list {
+        margin-top: 5rem;
+    }
+    .product_item h2 {
+        font-size: 1.5rem;
+    }
+    .product_item p {
+        font-size: 1rem;
+    }
+    .fylo_main h1 {
+        width: 90%;
+        font-size: 2rem;
+    }
+    .fylo_main p {
+        font-size: 1rem;
+    }
+    .fylo_blue {
+        width: 10.8rem;
+    }
+    .quote {
+        position: absolute;
+        top: -1rem;
+        left: 5%;
+    }
+    .comment {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+    .access {
+        margin-top: 7rem;
+        width: 90%;
+        height: 20rem;
+    }
+    .access h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .access p {
+        font-size: 1rem;
+        margin: 0;
+    }
+    .contact {
+        width: 80%;
+        position: relative;
+        left: 9%;
+        top: 0rem;
+    }
+    .links {
+        position: relative;
+        left: 9%;
+        top: 0rem;
+    }
+    .location {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header_img {
+        width: 90%;
+    }
+    .header_logo {
+        width: 5rem;
+    }
+    .fylo_main h1 {
+        width: 90%;
+        font-size: 2rem;
+    }
+    .fylo_main p {
+        font-size: 1rem;
+    }
+    .fylo_blue {
+        width: 10.8rem;
+    }
+    .quote {
+        position: absolute;
+        top: -1rem;
+        left: 5%;
+    }
+    .comment {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+    .access {
+        margin-top: 7rem;
+        width: 90%;
+        height: 22rem;
+    }
+    .access h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .access p {
+        font-size: .8rem;
+        margin: 1rem;
+    }
+    .contact {
+        width: 80%;
+        position: relative;
+        left: 9%;
+        top: 0rem;
+    }
+    .links {
+        position: relative;
+        left: 9%;
+        top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header_img {
+        width: 100%;
+    }
+    .header_main_header h1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .header_main_header p {
+        width: 100%;
+        font-size: .9rem;
+    }
+    .product_list {
+        width: 80%;
+    }
+    .product_list {
+        margin-top: 5rem;
+        grid-gap: 5rem;
+    }
+    .product_item h2 {
+        font-size: 1.5rem;
+    }
+    .product_item p {
+        font-size: 1rem;
+    }
+    .fylo_main h1 {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    .fylo_main p {
+        font-size: .9rem;
+    }
+    .fylo_works {
+        margin-top: -10rem;
+    }
+    .access {
+        margin-top: 7rem;
+        width: 90%;
+        height: 22rem;
+    }
+    .access h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .access p {
+        font-size: .9rem;
+    }
+    .contact {
+        width: 80%;
+        position: relative;
+        left: 9%;
+        top: 0rem;
+    }
+    .links {
+        position: relative;
+        left: 9%;
+        top: 0rem;
+    }
+    .access_form input {
+        width: 74%;
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+    .access_form button {
+        width: 95%;
+        height: 3rem;
+    }
+    .location {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .header_main_header button {
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .header_nav {
+        flex-direction: column;
+    }
+}
