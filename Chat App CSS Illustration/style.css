@@ -1,0 +1,419 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background-color: hsl(270, 20%, 96%);
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 10%;
+}
+/* .design{
+    position: absolute;
+    width: 100%;
+} */
+
+/* bg */
+
+.bg{
+    position: absolute; left: -6%;
+    width: 32.2rem;  /*36% */
+    height: 100vh;
+    z-index: -2;
+}
+.bg_box{
+    width: 100%;
+    height: 43.7rem;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    background-image: linear-gradient(to bottom, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
+    opacity: 1;
+}
+.bg-2{
+    position: absolute; right: -18%; bottom: 0;
+    width: 32.2rem;  /*36% */
+    height: 100vh;
+    z-index: -2;
+    transform: rotate(180deg);
+}
+.bg_box-2{
+    width: 100%;
+    height: 43.7rem;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    background-color:hsla(276, 100%, 81%, 0.096) ;
+    opacity: 1;
+}
+/* container  */
+.container{
+    width: 100%;
+    height: 100%;
+    padding-left: 25.3%;
+    padding-top: 10.3%;
+    display: flex;
+    flex-direction: row;
+}
+.phone{
+    position: relative;
+    box-sizing: border-box;
+    width: 15.3rem;
+    height: 31.5rem;
+    opacity: 1;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+    border: .5rem solid white;
+    box-shadow: 15px 10px 50px -40px black;
+}
+.phone_top_white{
+    position: absolute; top: -.4rem; left: 3.1rem;
+    width: 8.1rem;
+    height: 1.6rem;
+    background-color: white;
+    border-radius: 15px;
+}
+.phone_top_person_box{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: linear-gradient(to left, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
+    height: 4.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.person_arrow{
+    margin-left: 1rem;
+    margin-top: 1.3rem;
+    width: .4rem;
+}
+.person_menu{
+    margin-top: 1.1rem;
+    width: .25rem;
+}
+.person{
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.person img{
+    width: 1.45rem;
+    margin-left: .4rem;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.name{
+    width: 9.3rem;
+    margin-left: .5rem;
+    margin-top: .1rem;
+}
+.person h1{
+    font-size: .65rem;
+    font-weight: 700;
+}
+.person p{
+    font-size: .5rem;
+}
+
+/* chat */
+
+.chat{
+    padding: .75rem .5rem 0 .5rem;
+    width: 100%;
+    height: 23.45rem;
+    background-color: hsl(270, 20%, 96%);
+}
+
+.message-left{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.message-left p {
+    padding: .4rem 0rem .4rem .4rem;
+    width: 8rem;
+    font-size: .51rem;
+    line-height: .65rem;
+    border-radius: 10px;
+    margin-bottom: .56rem;
+    background-color: hsla(276, 93%, 88%, 0.192);
+    color: hsl(276, 55%, 52%);
+}
+.message-right-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem 0 0 0;
+    margin-bottom: .5rem;
+}
+.message-right-img img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    margin-left: .5rem;
+}
+
+.message-right,
+.message-right-smaller{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.message-right p ,
+.message-right-smaller p {
+    display: flex;
+    justify-content: flex-end;
+    padding: .45rem .4rem .4rem .4rem;
+    width: 8rem;
+    font-size: .52rem;
+    line-height: .65rem;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -3px 3px 20px -17px black;
+    color: hsl(271, 15%, 43%);
+}
+.message-right-smaller p {
+    width: 5rem;
+    margin-bottom: 1.15rem;
+}
+
+.task-left{
+    margin-top: .1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: .4rem;
+    border-radius: 10px 10px 10px 0px;
+    margin-bottom: .75rem;
+    color: white;
+    background-image: linear-gradient(to right, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
+}
+.circle{
+    margin-left: .4rem;
+    margin-top: .6rem;
+    width: .7rem;
+    height: .7rem;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+.task-left p{
+    font-size:  .5rem;
+    margin-top: .6rem;
+    margin-left: .45rem;
+    width: 6rem;
+}
+.task-left h1{
+    padding-top: .5rem;
+    font-size: .75rem;
+}
+
+/* your_message_box */
+
+.your_message_box{
+    position: relative;
+    width: 100%;
+    padding: 0 .4rem;
+}
+.your_message{
+    height: 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    font-size: .6rem;
+    padding: .1rem 3rem 0 1rem;
+    text-decoration: none;
+    outline: none;
+}
+.send_message{
+    position: absolute; right: .7rem; top: .2rem;
+    width: 1.55rem;
+    height: 1.55rem;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(271, 36%, 24%);
+}
+.send_message img{
+    margin-top: .1rem;
+    width: .44rem;
+    transform: rotate(180deg);
+}
+
+/* header */
+
+.header{
+    width: 28rem;
+    height: 100%;
+    opacity: 1;
+    margin-top: 10rem;
+    margin-left: 11.5%;
+}
+.header h1{
+    font-size: 2.45rem;
+    margin-bottom: 1.6rem;
+    color: hsl(271, 36%, 24%);
+}
+.header p{
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+    color: hsl(270, 7%, 64%)    ;
+}
+
+
+@media only screen and (max-width: 1150px){
+    main{
+        padding-bottom: 10rem;
+    }
+    .container{
+        padding-left: 4rem;
+        padding-top: 4rem;
+    }
+    .header{
+        width: 28rem;
+        height: 100%;
+        opacity: 1;
+        margin-top: 8rem;
+        margin-left: 12rem;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .bg{
+        position: absolute; left: -25%;
+        width: 50%;  /*36% */
+        height: 100%;
+    }
+    .bg_box{
+        height: 50%;
+    }
+    .bg-2{
+        position: absolute; right: -25%; bottom: 0;
+        width: 50%;  /*36% */
+        height: 100%;
+    }
+    .bg_box-2{
+        height: 50%;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+        padding-top: 0%;
+    }
+    .header{
+        width: 28rem;
+        height: 100%;
+        opacity: 1;
+        margin-top: 10rem;
+        margin-left: 0%;
+        text-align: center;
+        transform: scale(1.2);
+    }
+    .phone{
+        margin-top: 8rem;
+        transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 800px){
+    .bg{
+        position: absolute; left: -40%;
+        width: 80%;  /*36% */
+    }
+    .bg-2{
+        position: absolute; right: -40%; bottom: 0;
+        width: 80%;  /*36% */
+    }
+    .header{
+        transform: scale(1.1);
+    }
+    .phone{
+        transform: scale(1.1);
+    }
+}
+@media only screen and (max-width: 550px){
+    .bg{
+        position: absolute; left: -50%;
+        width: 90%;  /*36% */
+    }
+    .bg-2{
+        position: absolute; right: -50%; bottom: 0;
+        width: 90%;  /*36% */
+    }
+    .header{
+        width: 100%;
+        padding: 0 10%;
+        margin-top: 5rem;
+        transform: scale(1);
+    }
+    .phone{
+        margin-top: 2rem;
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 410px){
+    .header{
+        width: 100%;
+        padding: 0 10%;
+        margin-top: 5rem;
+        transform: scale(.95);
+    }
+    .phone{
+        margin-top: 2rem;
+        transform: scale(.95);
+    }
+    .header h1{
+        font-size: 2.4rem;
+    }
+    .header p{
+        font-size: 1.05rem;
+    }
+}
+@media only screen and (max-width: 320px){
+    .header{
+        padding: 0 8%;
+        transform: scale(.85);
+    }
+    .phone{
+        margin-top: 2rem;
+        transform: scale(.85);
+    }
+    .header h1{
+        font-size: 2rem;
+    }
+    .header p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 250px){
+    .header{
+        padding: 0 8%;
+        transform: scale(1);
+    }
+    .phone{
+        margin-top: 2rem;
+        transform: scale(.75);
+    }
+    .header h1{
+        font-size: 1.8rem;
+    }
+    .header p{
+        font-size: .95rem;
+    }
+}
